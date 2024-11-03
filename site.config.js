@@ -32,30 +32,30 @@ const CONFIG = {
   // notion configuration (required)
   notionConfig: {
     //pageId: process.env.NOTION_PAGE_ID,
-    pageId: "1334f4c3dbcf80899321c6427064d8a8"
+    pageId: "1334f4c3dbcf80899321c6427064d8a8",
   },
 
   // plugin configuration (optional)
   googleAnalytics: {
-    enable: false,
+    enable: true,
     config: {
       measurementId: process.env.NEXT_PUBLIC_GOOGLE_MEASUREMENT_ID || "",
     },
   },
   googleSearchConsole: {
-    enable: false,
+    enable: true,
     config: {
       siteVerification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "",
     },
   },
   naverSearchAdvisor: {
-    enable: false,
+    enable: true,
     config: {
       siteVerification: process.env.NEXT_PUBLIC_NAVER_SITE_VERIFICATION || "",
     },
   },
   utterances: {
-    enable: false,
+    enable: true,
     config: {
       repo: process.env.NEXT_PUBLIC_UTTERANCES_REPO || "",
       "issue-term": "og:title",
