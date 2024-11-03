@@ -3,22 +3,19 @@ import React from "react"
 import { AiFillCodeSandboxCircle } from "react-icons/ai"
 import styled from "@emotion/styled"
 import { Emoji } from "src/components/Emoji"
-import { Project } from './types' // Importe a interface
 
 const ServiceCard: React.FC = () => {
-  return null
-  /*
   if (!CONFIG.projects) return null
   return (
     <>
       <StyledTitle>
-        <Emoji></Emoji> Service
+        <Emoji>🌟</Emoji> Service
       </StyledTitle>
       <StyledWrapper>
-        {CONFIG.projects.map((project: Project, idx) => (
+        {CONFIG.projects.map((project, idx) => (
           <a
             key={idx}
-            href={project.href} // Use a propriedade 'href' da interface
+            href={`${project.href}`}
             rel="noreferrer"
             target="_blank"
           >
@@ -29,12 +26,9 @@ const ServiceCard: React.FC = () => {
       </StyledWrapper>
     </>
   )
-  */
 }
 
 export default ServiceCard
-
-// ... (resto do código)
 
 const StyledTitle = styled.div`
   padding: 0.25rem;
