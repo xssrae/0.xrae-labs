@@ -1,4 +1,4 @@
-import { CONFIG } from "site.config"
+import { CONFIG } from "site.config.js"
 import React from "react"
 import { AiFillCodeSandboxCircle } from "react-icons/ai"
 import styled from "@emotion/styled"
@@ -9,7 +9,7 @@ const ServiceCard: React.FC = () => {
   return (
     <>
       <StyledTitle>
-        <Emoji>🌟</Emoji> Projetos
+        <Emoji>🌟</Emoji> Projects
       </StyledTitle>
       <StyledWrapper>
         {CONFIG.projects.map((project, idx) => (
